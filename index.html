@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<title>Akatuoro</title>
+<link rel="stylesheet" type="text/scss" href="style.css">
+<script>
+	function fill() {
+	var wrapper = document.getElementById("wrapper");
+	for (var j = 0; j < 10; j++) {
+		var disk = document.createElement("div");
+		disk.classList.add("disk" + (j+1));
+		wrapper.appendChild(disk);
+		var last = disk;
+		for (var i = 0; i < 8; i++) {
+			var line = document.createElement("div");
+			line.classList.add("line");
+			line.classList.add("line" + (j % 2 + 1));
+			last.appendChild(line);
+			last = line;
+		}
+	}
+}
+</script>
+</head>
+<body onload="fill()">
+	<div id="wrapper" class="wrapper">
+	</div>
+</body>
+</html>

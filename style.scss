@@ -1,0 +1,137 @@
+---
+---
+
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin rotating-anim($keys, $delay) {
+  -webkit-animation: $keys 2s cubic-bezier(0.25, 0, 0.705, 1) $delay infinite;
+  animation: $keys 2s cubic-bezier(0.25, 0, 0.705, 1) $delay infinite;
+}
+
+@mixin rotating-line($linecolor, $delay) {
+  @include rotating-anim(line2, $delay);
+}
+
+
+.line {
+  position: absolute;
+  bottom: 0px;
+  width: 2px;
+  height: 8px;
+  background-color: red;
+}
+
+.marg {
+  margin-left: 60px;
+}
+.line1 {
+  background-color: red;
+  @include rotating-line(red, 0s);
+}
+.line2 {
+  background-color: orange;
+  @include rotating-line(orange, 1s);
+}
+
+@mixin disk($delay) {
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear $delay infinite;
+  animation: rotate 10s linear $delay infinite;
+}
+
+.disk1 {
+  background-color: blue;
+  @include disk(0s);
+}
+.disk2 {
+  background-color: blue;
+  @include disk(1s);
+}
+.disk3 {
+  background-color: blue;
+  @include disk(2s);
+}
+.disk4 {
+  background-color: blue;
+  @include disk(3s);
+}
+.disk5 {
+  background-color: blue;
+  @include disk(4s);
+}
+.disk6 {
+  background-color: blue;
+  @include disk(5s);
+}
+.disk7 {
+  background-color: blue;
+  @include disk(6s);
+}
+.disk8 {
+  background-color: blue;
+  @include disk(7s);
+}
+.disk9 {
+  background-color: blue;
+  @include disk(8s);
+}
+.disk10 {
+  background-color: blue;
+  @include disk(9s);
+}
+
+@mixin keyframes-line {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    bottom: -50px;
+    height: 100px;
+    -webkit-transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes line2 {
+  @include keyframes-line();
+}
+
+@keyframes line2 {
+  @include keyframes-line();
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-180deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.wrapper {
+  background-color: red;
+  position: absolute;
+  margin: 50% 50%;
+  height: 0px;
+  width: 0px;
+}
