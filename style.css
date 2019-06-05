@@ -169,17 +169,29 @@
     -webkit-transform: rotate(180deg);
   }
 }
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   background-color: black;
   overflow: hidden;
 }
 
 .wrapper {
-  background-color: red;
   position: absolute;
-  margin: 50% 50%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
   height: 0px;
   width: 0px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
