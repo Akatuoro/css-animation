@@ -9,8 +9,8 @@
   animation: $keys 2s cubic-bezier(0.25, 0, 0.705, 1) $delay infinite;
 }
 
-@mixin rotating-line($linecolor, $delay) {
-  @include rotating-anim(line2, $delay);
+@mixin rotating-line($line, $delay) {
+  @include rotating-anim($line, $delay);
 }
 
 
@@ -18,23 +18,36 @@
   position: absolute;
   bottom: 0px;
   width: 2px;
-  height: 8px;
   background-color: red;
 }
 
 .line1 {
   background-color: red;
-  @include rotating-line(red, 0s);
+  height: 100%;
+  @include rotating-line(line2, 0s);
 }
 .line2 {
   background-color: orange;
-  @include rotating-line(orange, 1s);
+  height: 100%;
+  @include rotating-line(line2, 1s);
+}
+
+
+.line1first {
+  background-color: red;
+  height: 5%;
+  @include rotating-line(line1, 0s);
+}
+.line2first {
+  background-color: orange;
+  height: 5%;
+  @include rotating-line(line1, 1s);
 }
 
 @mixin disk($delay) {
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 200px;
+  height: 40%;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear $delay infinite;
@@ -82,13 +95,12 @@
   @include disk(9s);
 }
 
-@mixin keyframes-line {
+@mixin keyframes-line2 {
   0% {
     -webkit-transform: rotate(0deg);
   }
   50% {
     bottom: -50px;
-    height: 100px;
     -webkit-transform: rotate(-180deg);
   }
   100% {
@@ -97,11 +109,34 @@
 }
 
 @-webkit-keyframes line2 {
-  @include keyframes-line();
+  @include keyframes-line2();
 }
 
 @keyframes line2 {
-  @include keyframes-line();
+  @include keyframes-line2();
+}
+
+
+@mixin keyframes-line1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    bottom: -50px;
+    height: 20%;
+    -webkit-transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes line1 {
+  @include keyframes-line1();
+}
+
+@keyframes line1 {
+  @include keyframes-line1();
 }
 
 @-webkit-keyframes rotate {
@@ -128,8 +163,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 0px;
-  width: 0px;
+  //height: 0px;
+  //width: 0px;
+  height: 100%;
 }
 .container {
   position: fixed;
