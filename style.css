@@ -1,0 +1,185 @@
+.line {
+  position: absolute;
+  bottom: 0px;
+  width: 2px;
+  height: 8px;
+  background-color: red;
+}
+
+.marg {
+  margin-left: 60px;
+}
+
+.line1 {
+  background-color: red;
+  -webkit-animation: line2 2s cubic-bezier(0.25, 0, 0.705, 1) 0s infinite;
+  animation: line2 2s cubic-bezier(0.25, 0, 0.705, 1) 0s infinite;
+}
+
+.line2 {
+  background-color: orange;
+  -webkit-animation: line2 2s cubic-bezier(0.25, 0, 0.705, 1) 1s infinite;
+  animation: line2 2s cubic-bezier(0.25, 0, 0.705, 1) 1s infinite;
+}
+
+.disk1 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 0s infinite;
+  animation: rotate 10s linear 0s infinite;
+}
+
+.disk2 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 1s infinite;
+  animation: rotate 10s linear 1s infinite;
+}
+
+.disk3 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 2s infinite;
+  animation: rotate 10s linear 2s infinite;
+}
+
+.disk4 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 3s infinite;
+  animation: rotate 10s linear 3s infinite;
+}
+
+.disk5 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 4s infinite;
+  animation: rotate 10s linear 4s infinite;
+}
+
+.disk6 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 5s infinite;
+  animation: rotate 10s linear 5s infinite;
+}
+
+.disk7 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 6s infinite;
+  animation: rotate 10s linear 6s infinite;
+}
+
+.disk8 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 7s infinite;
+  animation: rotate 10s linear 7s infinite;
+}
+
+.disk9 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 8s infinite;
+  animation: rotate 10s linear 8s infinite;
+}
+
+.disk10 {
+  background-color: blue;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  height: 200px;
+  width: 0px;
+  -webkit-transform-origin: 100% 0%;
+  -webkit-animation: rotate 10s linear 9s infinite;
+  animation: rotate 10s linear 9s infinite;
+}
+
+@-webkit-keyframes line2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    bottom: -50px;
+    height: 100px;
+    -webkit-transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes line2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    bottom: -50px;
+    height: 100px;
+    -webkit-transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-180deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.wrapper {
+  background-color: red;
+  position: absolute;
+  margin: 50% 50%;
+  height: 0px;
+  width: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
