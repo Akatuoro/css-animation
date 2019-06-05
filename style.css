@@ -6,10 +6,6 @@
   background-color: red;
 }
 
-.marg {
-  margin-left: 60px;
-}
-
 .line1 {
   background-color: red;
   -webkit-animation: line2 2s cubic-bezier(0.25, 0, 0.705, 1) 0s infinite;
@@ -181,7 +177,6 @@ body {
 
 .wrapper {
   position: absolute;
-  margin: auto;
   top: 50%;
   left: 50%;
   height: 0px;
@@ -189,7 +184,7 @@ body {
 }
 
 .container {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100%;
 }
