@@ -14,7 +14,7 @@
 		for (var i = 0; i < 8; i++) {
 			var line = document.createElement("div");
 			line.classList.add("line");
-			line.classList.add("line" + (j % 2 + 1));
+			line.classList.add("line" + (j % 2 + 1) + ((!i)? 'first' : ''));
 			last.appendChild(line);
 			last = line;
 		}

@@ -37,7 +37,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 0s infinite;
@@ -48,7 +48,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 1s infinite;
@@ -59,7 +59,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 2s infinite;
@@ -70,7 +70,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 3s infinite;
@@ -81,7 +81,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 4s infinite;
@@ -92,7 +92,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 5s infinite;
@@ -103,7 +103,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 6s infinite;
@@ -114,7 +114,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 7s infinite;
@@ -125,7 +125,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 8s infinite;
@@ -136,7 +136,7 @@
   background-color: blue;
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear 9s infinite;
@@ -172,7 +172,6 @@
     -webkit-transform: rotate(0deg);
   }
   50% {
-    bottom: -50px;
     height: 20%;
     -webkit-transform: rotate(-180deg);
   }
@@ -185,7 +184,6 @@
     -webkit-transform: rotate(0deg);
   }
   50% {
-    bottom: -50px;
     height: 20%;
     -webkit-transform: rotate(-180deg);
   }

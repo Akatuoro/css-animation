@@ -47,7 +47,7 @@
 @mixin disk($delay) {
   position: absolute;
   -webkit-transform: rotate(-180deg);
-  height: 40%;
+  height: 40vmin;
   width: 0px;
   -webkit-transform-origin: 100% 0%;
   -webkit-animation: rotate 10s linear $delay infinite;
@@ -122,7 +122,7 @@
     -webkit-transform: rotate(0deg);
   }
   50% {
-    bottom: -50px;
+    //bottom: -50px;
     height: 20%;
     -webkit-transform: rotate(-180deg);
   }
