@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('sw.js', {scope: '/'}).catch(e => console.log(e));
+	navigator.serviceWorker.register('sw.js', {scope: ''}).catch(e => console.log(e));
 }
 
 let promptEvent;
